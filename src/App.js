@@ -1,23 +1,38 @@
-import logo from './logo.svg';
+import State from "./Hooks/useState";
+import Effect from "./Hooks/useEffect";
+import Ref from "./Hooks/useRef";
+import Context from "./Hooks/useContext";
+import Reducer from "./Hooks/useReducer";
+import Callback from "./Hooks/useCallback";
+import Memo from "./Hooks/useMemo";
+import LayoutEffect from "./Hooks/useLayoutEffect";
+import ImperativeHandler from "./Hooks/useImperativeHandler";
+import DebugValue from "./Hooks/useDebugValue";
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <State />
+      <hr />
+      <Effect />
+      <hr />
+      <Ref />
+      <hr />
+      <Context />
+      <hr />
+      <Reducer />
+      <hr />
+      <Memo />
+      <hr />
+      <Callback />
+      <hr />
+      <LayoutEffect />
+      <hr />
+      <ImperativeHandler />
+      <hr />
+      <DebugValue />
+      <hr />
     </div>
   );
 }
